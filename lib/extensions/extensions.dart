@@ -1,4 +1,4 @@
-library extensions;
+library _extensions;
 
 import 'dart:math';
 

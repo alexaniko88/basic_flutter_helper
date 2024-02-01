@@ -1,4 +1,4 @@
-library mixins;
+library _mixins;
 
 import 'dart:async';
 
