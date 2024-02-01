@@ -1,5 +1,3 @@
-part of 'extensions.dart';
-
 extension DateTimeExtensions on DateTime {
   bool get isToday {
     final now = DateTime.now();
