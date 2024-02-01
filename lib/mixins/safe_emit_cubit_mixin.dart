@@ -1,4 +1,4 @@
-part of 'mixins.dart';
+part of '../basic_flutter_helper.dart';
 
 mixin SafeEmitCubitMixin<T> on Cubit<T> {
   @override

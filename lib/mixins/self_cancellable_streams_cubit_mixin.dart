@@ -1,4 +1,4 @@
-part of 'mixins.dart';
+part of '../basic_flutter_helper.dart';
 
 mixin SelfCancellableStreamsCubitMixin<T> on Cubit<T> {
   final List<StreamSubscription> _subscriptions = [];

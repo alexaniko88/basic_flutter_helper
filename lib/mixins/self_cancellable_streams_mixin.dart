@@ -1,4 +1,4 @@
-part of 'mixins.dart';
+part of '../basic_flutter_helper.dart';
 
 mixin SelfCancellableStreamMixin<T extends StatefulWidget> on State<T> {
   final List<StreamSubscription> _subscriptions = [];

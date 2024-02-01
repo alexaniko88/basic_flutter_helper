@@ -1,4 +1,4 @@
-import 'dart:math';
+part of '../basic_flutter_helper.dart';
 
 extension IntExtensions on int {
   String formatBytes({int decimals = 2}) {

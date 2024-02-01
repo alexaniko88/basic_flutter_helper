@@ -1,4 +1,4 @@
-part of '../utils.dart';
+part of '../../basic_flutter_helper.dart';
 class Pair<A, B> {
   const Pair(this.first, this.second);
 

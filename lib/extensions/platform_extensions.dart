@@ -1,5 +1,4 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+part of '../basic_flutter_helper.dart';
 
 extension PlatformExt on TargetPlatform {
 

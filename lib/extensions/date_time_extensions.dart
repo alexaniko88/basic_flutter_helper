@@ -1,3 +1,5 @@
+part of '../basic_flutter_helper.dart';
+
 extension DateTimeExtensions on DateTime {
   bool get isToday {
     final now = DateTime.now();

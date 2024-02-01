@@ -1,3 +1,5 @@
+part of '../basic_flutter_helper.dart';
+
 extension DurationExtension on Duration {
   String get asMinutesAndSeconds {
     String twoDigits(int n) => n.toString().padLeft(2, "0");
