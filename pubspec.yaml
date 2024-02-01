@@ -1,5 +1,5 @@
 name: basic_flutter_helper
-description: "A new Flutter package project."
+description: "A simple flutter package with common utilities as extensions/mixins/helpers"
 version: 0.0.1
 homepage: https://github.com/alexaniko88/basic_flutter_helper
 
