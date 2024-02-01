@@ -1,4 +1,4 @@
-part of extensions;
+part of 'extensions.dart';
 
 extension DurationExtension on Duration {
   String get asMinutesAndSeconds {

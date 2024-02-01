@@ -1,4 +1,4 @@
-part of extensions;
+part of 'extensions.dart';
 
 extension IntExtensions on int {
   String formatBytes({int decimals = 2}) {

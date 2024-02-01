@@ -1,4 +1,4 @@
-part of extensions;
+part of 'extensions.dart';
 
 extension DateTimeExtensions on DateTime {
   bool get isToday {

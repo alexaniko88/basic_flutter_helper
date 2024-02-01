@@ -1,4 +1,4 @@
-part of extensions;
+part of 'extensions.dart';
 
 extension StringExtensions on String? {
   /// Returns this string or empty string if this string is null.
