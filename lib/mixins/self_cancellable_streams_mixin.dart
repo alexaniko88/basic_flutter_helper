@@ -15,7 +15,8 @@ mixin SelfCancellableStreamMixin<T extends StatefulWidget> on State<T> {
 
   @override
   void dispose() {
-    cancelSubscriptions().then((value) => super.dispose());
+    cancelSubscriptions();
+    super.dispose();
   }
 }
 

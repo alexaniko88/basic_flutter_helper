@@ -4,10 +4,11 @@ version: 0.0.1
 homepage: https://github.com/alexaniko88/basic_flutter_helper
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: '>=2.17.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
+  connectivity_plus: ^5.0.2
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.3
