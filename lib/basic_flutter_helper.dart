@@ -23,5 +23,5 @@ part 'mixins/self_cancellable_streams_mixin.dart';
 part 'utils/models/pair.dart';
 part 'utils/connectivity/connectivity_stream_builder.dart';
 part 'utils/connectivity/connectivity_utils.dart';
-part 'utils/disabled_content.dart';
+part 'widgets/disabled_content.dart';
 part 'utils/logger.dart';
