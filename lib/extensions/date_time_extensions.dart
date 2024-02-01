@@ -39,4 +39,13 @@ extension DateTimeExtensions on DateTime {
   DateTime get toBeginningOfTheDay => DateTime(year, month, day);
 
   DateTime get toBeginningOfTheMonth => DateTime(year, month).toBeginningOfTheDay;
+
+  int get daysInMonth {
+    final daysInMonth = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    var result = daysInMonth[month];
+    if (month == 2 && _isLeapYear(year)) result++;
+    return result;
+  }
+
+  bool _isLeapYear(int value) => value % 400 == 0 || (value % 4 == 0 && value % 100 != 0);
 }

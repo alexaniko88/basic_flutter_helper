@@ -4,6 +4,18 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group('String extensions test', () {
 
+    /// orEmpty
+
+    test('Having provided null string When orEmpty is called Then return empty string', () {
+      String? test;
+      expect(test.orEmpty, '');
+    });
+
+    test('Having provided string When orEmpty is called Then return the string', () {
+      String test = 'test';
+      expect(test.orEmpty, 'test');
+    });
+
     /// isNullOrEmpty
 
     test('Having provided null string When isNullOrEmpty is called Then return true', () {

@@ -1,15 +1,15 @@
 part of '../basic_flutter_helper.dart';
 
 /// Basic string extensions
-extension NullStringExtensions on String? {
+extension NullableStringExtensions on String? {
   /// Returns this string or empty string if this string is null.
   String get orEmpty => this != null ? this! : '';
 
   /// Returns [true] if is either null or empty.
-  bool get isNullOrEmpty => this == null || this!.trim().isEmpty;
+  bool get isNullOrEmpty => this?.trim().isEmpty ?? true;
 
   /// Returns [true] if is not null and not empty string.
-  bool get isNotNullAndNotEmpty => this != null && this!.trim().isNotEmpty;
+  bool get isNotNullAndNotEmpty => this?.trim().isNotEmpty ?? false;
 
   /// Returns the string capitalized or the same string in case is null or empty.
   String? get asCapitalized => this != null ? StringExtensions(this!).asCapitalized : this;
