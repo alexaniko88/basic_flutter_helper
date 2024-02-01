@@ -1,3 +1,5 @@
+part of '../basic_flutter_helper.dart';
+
 extension StringExtensions on String? {
   /// Returns this string or empty string if this string is null.
   String get orEmpty => this != null ? this! : '';
