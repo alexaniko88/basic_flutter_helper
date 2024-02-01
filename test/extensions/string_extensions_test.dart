@@ -70,6 +70,11 @@ void main() {
       expect(test.asCapitalized, 'String');
     });
 
+    test('Having provided nullable string but with value When asCapitalized is called Then return the string with capitalized value', () {
+      String? test = "test";
+      expect(test.asCapitalized, "Test");
+    });
+
     /// asCapitalizeByWord
 
     test('Having provided string with empty spaces When asCapitalizeByWord is called Then return the same empty string', () {
@@ -85,6 +90,11 @@ void main() {
     test('Having provided string When asCapitalizeByWord is called Then return the capitalized string', () {
       String test = 'string and another string';
       expect(test.asCapitalizeByWord, 'String And Another String');
+    });
+
+    test('Having provided nullable string but with value When asCapitalizeByWord is called Then return the string with capitalized value', () {
+      String? test = "test and another test";
+      expect(test.asCapitalizeByWord, "Test And Another Test");
     });
   });
 }

@@ -1,6 +1,7 @@
 part of '../basic_flutter_helper.dart';
 
-extension StringExtensions on String? {
+/// Basic string extensions
+extension NullStringExtensions on String? {
   /// Returns this string or empty string if this string is null.
   String get orEmpty => this != null ? this! : '';
 
@@ -11,10 +12,17 @@ extension StringExtensions on String? {
   bool get isNotNullAndNotEmpty => this != null && this!.trim().isNotEmpty;
 
   /// Returns the string capitalized or the same string in case is null or empty.
-  String? get asCapitalized => isNullOrEmpty ? this : "${this![0].toUpperCase()}${this!.substring(1).toLowerCase()}";
+  String? get asCapitalized => this != null ? StringExtensions(this!).asCapitalized : this;
 
   /// Returns the string capitalized by words or the same string in case is null or empty.
-  String? get asCapitalizeByWord => isNullOrEmpty
-      ? this
-      : this!.split(' ').map((element) => element.asCapitalized).join(" ");
+  String? get asCapitalizeByWord => this != null ? StringExtensions(this!).asCapitalizeByWord : this;
+}
+
+extension StringExtensions on String {
+  /// Returns the string capitalized or the same string in case is null or empty.
+  String get asCapitalized => trim().isEmpty ? this : "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
+
+  /// Returns the string capitalized by words or the same string in case is null or empty.
+  String get asCapitalizeByWord =>
+      trim().isEmpty ? this : split(' ').map((element) => element.asCapitalized).join(" ");
 }
