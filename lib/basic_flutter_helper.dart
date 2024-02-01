@@ -5,6 +5,7 @@ import 'dart:math';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/foundation.dart';
+import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -23,3 +24,4 @@ part 'utils/models/pair.dart';
 part 'utils/connectivity/connectivity_stream_builder.dart';
 part 'utils/connectivity/connectivity_utils.dart';
 part 'utils/disabled_content.dart';
+part 'utils/logger.dart';

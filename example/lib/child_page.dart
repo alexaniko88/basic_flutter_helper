@@ -13,8 +13,8 @@ class _ChildPageState extends State<ChildPage> with SelfCancellableStreamMixin {
   @override
   void initState() {
     listenForConnectivityChange(
-      onOnline: () => print("ONLINE!"),
-      onOffline: () => print("OFFLINE!!!"),
+      onOnline: () => printLog("ONLINE!"),
+      onOffline: () => printLog("OFFLINE!!!"),
     ).subscribeAsCancellable(this);
     super.initState();
   }
