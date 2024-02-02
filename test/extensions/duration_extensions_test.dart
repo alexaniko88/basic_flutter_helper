@@ -2,7 +2,7 @@ import 'package:basic_flutter_helper/basic_flutter_helper.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  group('DurationExtension', () {
+  group('Duration extension tests', () {
     /// asMinutesAndSeconds
 
     test('Having 5 minutes duration When asMinutesAndSeconds is called Then returns correct format', () {
